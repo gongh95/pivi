@@ -106,7 +106,7 @@ body {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1.5em;
 }
 #main .games-container .contenedor .contenido img {
