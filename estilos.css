@@ -7,6 +7,14 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    --chicle-color: #fe4a49;
+    --azul-heading: #5959f3;
+    --amarillo-footer: #fed766;
+    --naranja-fondo: #e7893c;
+    --gris-subtitulo: #999;
+    --gris-aside: #ceccca;
+}
 body {
     background-image: url("./img/fondo_pattern.png");
     width: 100%;
@@ -55,7 +63,7 @@ body {
     text-decoration: none;
 }
 .nav-li a:hover {
-    color: rgb(239, 255, 17);
+    color: #efff11;
 }
 /* SUBMENU */
 .nav-ul__submenu {
@@ -63,6 +71,7 @@ body {
 }
 .main {
     padding: 30px;
+    padding-bottom: 70px;
     margin: 0 auto;
     position: relative;
     background-color: #fff;
@@ -71,12 +80,12 @@ body {
 .footer{
     position: relative;
     width: 1260px;
-    height: 400px;
+    height: 180px;
     margin: 0 auto;
-    background-color: #f00;
+    background-color: var(--chicle-color);
 }
 .aside {
-    background-color: bisque;
+    background-color: var(--gris-aside);
     width: 320px;
     height: 800px;
     display: flex;
@@ -99,7 +108,7 @@ body {
     font-weight: 100;
     font-size: 1.8em;
     text-transform: uppercase;
-    color:rgb(89, 89, 243);
+    color:var(--azul-heading);
     display: inline-block;
 }
 .contenedor {
@@ -111,7 +120,7 @@ body {
 }
 #main .games-container .contenedor .contenido img {
     padding: 1em;
-    background-color: rgb(231, 137, 60);
+    background-color: var(--naranja-fondo);
     width: 375px;
     height: 230px;
     object-fit: cover;
@@ -129,7 +138,7 @@ body {
 #main .games-container .contenedor .contenido p {
     font-family: 'Nunito', sans-serif;
     font-size: .8em;
-    color: #999;
+    color: var(--gris-subtitulo);
 }
 
 /* Footer */
@@ -138,20 +147,26 @@ body {
     display: flex;
 }
 #footer .footer-container .footer-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 30px 20px 40px;
     width: 400px;
+    height: 180px;
     background-color: #000;
     color: #ccc;
+    border-right: 10px solid var(--amarillo-footer);
 }
-#footer .footer-container .footer-copy .separador {
-    position: relative;
-    background-color: rgb(240, 215, 105);
-    width: 40px;
-    height: 40px;
-    right: 0;
+#footer .footer-container .footer-copy p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    letter-spacing: .1em;
 }
 #footer .footer-container .footer-copy img {
-    width: 300px;
-    height: 62px;
+    width: 217px;
+    height: auto;
 }
 
 /* Media Query 1260px */
