@@ -24,10 +24,14 @@ body {
     width: 1260px;
     background-color: #fe4a49;
 }
+.nav .logo {
+    margin-left: 2em;
+    width: 300px;
+    height: 62px;
+    padding-top: .43em;
+}
 .nav .logo img{
-    margin-left: 1em;
-    width: auto;
-    height: 5em;
+    width: 100%;
 }
 .nav-ul * {
     display: inline;
@@ -35,8 +39,8 @@ body {
 .nav-ul {
     width: 100%;
     position: relative;
-    top: -3.7em;
-    margin-left: 33%;
+    top: -2.2em;
+    margin-left: 30%;
 }
 .nav-li {
     padding: .8em;
@@ -58,17 +62,18 @@ body {
     display: none;
 }
 .main {
+    padding: 30px;
     margin: 0 auto;
     position: relative;
     background-color: #fff;
     width: 1260px;
-    height: 800px;
 }
 .footer{
+    position: relative;
     width: 1260px;
     height: 400px;
     margin: 0 auto;
-    display: flex;
+    background-color: #f00;
 }
 .aside {
     background-color: bisque;
@@ -78,7 +83,80 @@ body {
     flex-flow: column nowrap;
     position: absolute;
     right: 0;
+    top: 2em;
 }
+
+/* Contenidos */
+
+.games-container {
+    width: 810px;
+    height: fit-content;
+    position: relative;
+}
+#main .games-container h2 {
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 100;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    color:rgb(89, 89, 243);
+    display: inline-block;
+}
+.contenedor {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+#main .games-container .contenedor .contenido {
+    flex-grow: 1;
+}
+#main .games-container .contenedor .contenido img {
+    padding: 1em;
+    background-color: rgb(231, 137, 60);
+    width: 375px;
+    height: 230px;
+    object-fit: cover;
+}
+#main .games-container .contenedor2 .contenido img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+#main .games-container .contenedor .contenido h3 {
+    padding-top: 10px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6em;
+}
+#main .games-container .contenedor .contenido p {
+    font-family: 'Nunito', sans-serif;
+    font-size: .8em;
+    color: #999;
+}
+
+/* Footer */
+
+#footer .footer-container {
+    display: flex;
+}
+#footer .footer-container .footer-copy {
+    width: 400px;
+    background-color: #000;
+    color: #ccc;
+}
+#footer .footer-container .footer-copy .separador {
+    position: relative;
+    background-color: rgb(240, 215, 105);
+    width: 40px;
+    height: 40px;
+    right: 0;
+}
+#footer .footer-container .footer-copy img {
+    width: 300px;
+    height: 62px;
+}
+
 /* Media Query 1260px */
 
 @media screen and (max-width:1260px) {
