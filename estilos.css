@@ -109,9 +109,6 @@ body {
     justify-content: center;
     gap: 1.5em;
 }
-#main .games-container .contenedor .contenido {
-    flex-grow: 1;
-}
 #main .games-container .contenedor .contenido img {
     padding: 1em;
     background-color: rgb(231, 137, 60);
